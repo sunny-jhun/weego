@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
-    <a class="navbar-brand" href="#">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light" id="navbar">
+    <a class="navbar-brand" href="../views/home.php" id="brand"> <img id="logo" src="../assets/images/logo1.jpeg">
       WeeGo
     </a>
 
@@ -10,17 +10,17 @@
     <div id="navbar-nav" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="./home.php"> Home </a>
+          <a class="nav-link" href="./home.php"><i class="fas fa-home"></i> Home </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="catalog.php"> Catalog </a>
+          <a class="nav-link" href="catalog.php"><i class="fas fa-align-center"></i> Catalog </a>
         </li>
 
        
 
         <li class="nav-item">
-          <a class="nav-link" href="#"> Cart <span class="badge bg-light text-dark" id="cart-count">
+          <a class="nav-link" href="../views/cart.php"><i class="fas fa-shopping-cart"></i> Cart <span class="badge bg-light text-dark" id="cart-count">
             <?php 
             if (isset($_SESSION['cart'])){
               echo array_sum($_SESSION['cart']);
