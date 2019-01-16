@@ -8,7 +8,7 @@
 	global $conn; //refers to the $conn outside the function 
 ?>
 
-<div class="container">
+<div class="container mb-5">
 	<div class="row">
 
 		<!-- categories -->
@@ -85,7 +85,7 @@
 
 								<!-- add to cart -->
 								<div class="card-footer">
-									<input type="number" value="1" class="form-control">
+									<input type="number" value="1" class="form-control" min="1">
 									<button type="submit" class="btn btn-block btn-outline-primary add-to-cart" data-id="<?php echo $item['id']; ?> ">Add to Cart</button>
 								</div>
 							</div> <!-- end card -->

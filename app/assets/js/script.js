@@ -9,69 +9,68 @@ $(document).ready( () => {
 		let address = $("#address").val();
 
 
-		
-//username should be greater >= 10 chars
-
-        if(username.length < 10){
-            $("#username").next().html("Username is atleast 10 characters");
-            $("#username").next().css('color','red');
-            errors++;
-        }else{
-            $('#username').next().html('');
-        }
-
+		//username should be greater than or equal to 10 chars
+		if(username.length < 6) {
+			$("#username").next().html("Username should be at least 10 characters");
+			$("#username").next().css('color', 'red');
+			errors++;
+		} else {
+			$('#username').next().html(' ');
+		}
 
 		//password should be atleast 8 characters
-        if(password.length < 8){
-            $("#password").next().html("Please provide a stronger password");
-            $("#password").next().css('color','red');
-        }else{
-            $('#password').next().html("Password is secured");
-            $("#password").next().css('color','green');
-        }
+		if(password.length < 8) {
+			$("#password").next().html("Please provide a stronger password");
+			$("#password").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#password").next().html(' ');
+		}
 
-		//email
-        if (!email.includes("@")) {
-            $("#email").next().html("Please provide a valid email");
-            $("#email").next().css('color','red');
-        }else{
-            $('#email').next().html('');
-        }
+		//email should include the @ symbol
+		if(!email.includes("@")) {
+			$("#email").next().html("Please provide a valid email");
+			$("#email").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#email").next().html(' ');
+		}
 
-		 //address
+		//address
+		if(!address != "") {
+			$("#address").next().html("Please provide a valid address");
+			$("#address").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#address").next().html('');
+		}
 
-        if (!address !="") {
-            $("#address").next().html("Please provide address");
-            $("#address").next().css('color','red');
-        }else{
-            $('#address').next().html('');
-        }
+		// firstname
+		if(!firstname != "") {
+			$("#firstname").next().html("Please provide a valid first name");
+			$("#firstname").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#firstname").next().html(' ');
+		}
 
-		 //firstname
-        if (!firstname !="") {
-            $("#firstname").next().html("Please provide firstname");
-            $("#firstname").next().css('color','red');
-        }else{
-            $('#firstname').next().html('');
-        }
+		// lastname
+		if(!lastname != "") {
+			$("#lastname").next().html("Please provide a valid last name");
+			$("#lastname").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#lastname").next().html(' ');
+		}
 
-		//lastname
-        if (!lastname !="") {
-            $("#lastname").next().html("Please provide lastname");
-            $("#lastname").next().css('color','red');
-        }else{
-            $('#lastname').next().html('');
-        }
-
-		 //confirm password
-
-        if(password !== $("#confirm_password").val()){
-            $("#confirm_password").next().html("Password Should match");
-            $("#confirm_password").next().css('color','red');
-            error++;
-        }else{
-            $("#confirm_password").next().html(" ");
-        }
+		//confirm password
+		if(password !== $("#confirm_password").val()) {
+			$("#confirm_password").next().html("Passwords should match");
+			$("#confirm_password").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#confirm_password").next().html(' ');
+		}
 
 		if(errors > 0) {
 			return false; //this means there are errors
@@ -127,6 +126,7 @@ $(document).ready( () => {
 				'username':username,
 				'password':password
 			},
+
 			"success":(data) => {
 				if(data == "login_failed") {
 					$("#username").next().html("Please provide correct credentials");
@@ -215,7 +215,7 @@ $(document).ready( () => {
 				'item_quantity':0
 			},
 			"beforeSend": () => {
-				return confirm("Are you sure you want to remove this?");
+				return confirm("Are you sure you want to delete?");
 			},
 			"success": (data) => {
 				$(e.target).parents('tr').remove();
@@ -226,17 +226,68 @@ $(document).ready( () => {
 		});
 	});
 
+//submit profile form updates
+
+
+function validate_profile_form() {
+		let errors = 0;
+		let firstname = $("#firstname").val();
+		let lastname = $("#lastname").val();
+		let email = $("#email").val();
+		let address = $("#address").val();
 
 
 
+		//email should include the @ symbol
+		if(!email.includes("@")) {
+			$("#email").next().html("Please provide a valid email");
+			$("#email").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#email").next().html(' ');
+		}
 
+		//address
+		if(!address != "") {
+			$("#address").next().html("Please provide a valid address");
+			$("#address").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#address").next().html('');
+		}
 
+		// firstname
+		if(!firstname != "") {
+			$("#firstname").next().html("Please provide a valid first name");
+			$("#firstname").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#firstname").next().html(' ');
+		}
 
+		// lastname
+		if(!lastname != "") {
+			$("#lastname").next().html("Please provide a valid last name");
+			$("#lastname").next().css('color', 'red');
+			errors++;
+		} else {
+			$("#lastname").next().html(' ');
+		}
 
+		if(errors > 0) {
+			return false; //this means there are errors
+		} else {
+			return true;
+		}
 
+	}
 
-
-
+$('#update_info').click(() =>{
+	if (validate_profile_form()) {
+	$('#update_user_details').submit();
+ 
+  } 
+});
 
 
 });

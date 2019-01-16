@@ -30,10 +30,14 @@
           </span> </a>
         </li>
        <?php if(isset($_SESSION['user'])) { ?>
+         <li class="nav-item">
+          <a class="nav-link" href="../views/profile.php"><i class="fas fa-user-alt"></i> Profile </a>
+        </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="../controllers/logout.php"> Logout </a>
+          <a class="nav-link" href="../controllers/logout.php"><i class="fas fa-sign-out-alt"></i> Logout </a>
         </li>
+        
         <?php } else { ?>
 
         <li class="nav-item">
