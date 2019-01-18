@@ -7,29 +7,21 @@
 	$lastname = $_POST['lastname'];
 	$email = $_POST['email'];
 	$address = $_POST['address'];
+	$role = 2;
 
-
-	$sql = "SELECT* FROM users WHERE username = '$username'";
+	// retrieve only the data under the username column that
+	// has the same value as the username variable
+	$sql = "SELECT * FROM users WHERE username = '$username' ";
 	$result = mysqli_query($conn, $sql);
 
-	if (mysqli_num_rows($result) > 0) {
+	if(mysqli_num_rows($result) > 0) {
 		die("user_exists");
-	}else{
-
-	$sql_insert = "INSERT INTO users(username, password, firstname, lastname, email, address) VALUES ('$username', '$password', '$firstname', '$lastname', '$email', '$address'); ";
-	$result = mysqli_query($conn, $sql_insert);
+	} else {
+		$sql_insert = "INSERT INTO users(username, password, firstname, lastname, email, address ,roles_id) VALUES ('$username', '$password', '$firstname', '$lastname', '$email', '$address','$role'); ";
+		$result = mysqli_query($conn, $sql_insert);		
 	}
 
-	// if($result === TRUE) {
-	// 	echo "success";
-	// } else {
-	// 	echo mysqli_error($conn);
-	// }
 
-mysqli_close($conn);
-
-
-
-
+	mysqli_close($conn);
 
  ?>

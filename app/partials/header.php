@@ -15,11 +15,11 @@
         ?>
 
         <li class="nav-item">
-          <a class="nav-link" href="./home.php"> Home </a>
+          <a class="nav-link" href="./home.php"><i class="fas fa-home"></i> Home </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="./catalog.php"> Catalog </a>
+          <a class="nav-link" href="./catalog.php"><i class="fas fa-chevron-circle-down"></i> Catalog </a>
         </li>
 
         <li class="nav-item">
@@ -42,7 +42,9 @@
         <li class="nav-item">
           <a href="./users.php" class="nav-link">Users</a>
         </li>
-        
+         <li class="nav-item">
+          <a href="./orders.php" class="nav-link">Orders</a>
+        </li>
         
       <?php }; ?>
 

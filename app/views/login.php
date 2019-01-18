@@ -1,29 +1,30 @@
 <?php require_once '../partials/template.php'; ?>
 
 <?php function get_page_content() { ?>
-
+	
 	<div class="container">
-		<div class="jumbotron bg-dark text-light text-center mt-5">
+		<div class="jumbotron bg-dark text-light text-center mt-5 col-12 col-md-6 offset-md-3" id="jumbo-login">
 			<h4>Login</h4>
-		</div>
+		</div> <!-- end jumbo -->
 
-		<form>
+		<form class="col-4 offset-4" id="form-login">
 			<div class="form-group">
 				<label for="username">Username:</label>
-				<input type="text" name="username" class="form-control" id="username" placeholder="Enter Username">
+				<input type="text" class="form-control" id="username" name="username" placeholder="Enter Username">
 				<span class="validation"></span>
 			</div>
+
 			<div class="form-group">
 				<label for="password">Password:</label>
-				<input type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
+				<input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
 				<span class="validation"></span>
 			</div>
+
 		</form>
-			<div class="text-center py-4">
+			<div class="text-center col-6 offset-3 py-4">
 				<a href="./register.php" class="btn btn-secondary">Register</a>
 				<button type="button" class="btn btn-primary" id="login">Login</button>
 			</div>
-	</div>
-
+	</div> <!-- end container -->
 
 <?php } ?>
