@@ -166,8 +166,8 @@ function generate_new_transaction_number() {
 
     $redirectUrls = new RedirectUrls();
     $redirectUrls
-        ->setReturnUrl('https://weegoph/herokuapp.com/app/controllers/pay.php?success=true')
-        ->setCancelUrl('https://weegoph/herokuapp.com/app/controllers/pay.php?success=false');
+        ->setReturnUrl('https://weegoph.herokuapp.com/app/controllers/pay.php?success=true')
+        ->setCancelUrl('https://weegoph.herokuapp.com/app/controllers/pay.php?success=false');
 
     $payment = new Payment();
     $payment->setIntent('sale')
