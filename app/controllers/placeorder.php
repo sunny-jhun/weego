@@ -166,8 +166,8 @@ function generate_new_transaction_number() {
 
     $redirectUrls = new RedirectUrls();
     $redirectUrls
-        ->setReturnUrl('http://localhost/batch19/qstore/app/controllers/pay.php?success=true')
-        ->setCancelUrl('http://localhost/batch19/qstore/app/controllers/pay.php?success=false');
+        ->setReturnUrl('https://weego/herokuapp.com/app/controllers/pay.php?success=true')
+        ->setCancelUrl('https://weego/herokuapp.com/app/controllers/pay.php?success=false');
 
     $payment = new Payment();
     $payment->setIntent('sale')
