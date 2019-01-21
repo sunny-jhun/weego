@@ -62,6 +62,14 @@
 	color: white;
 	border-left: solid 8px #52470f;
 }
+
+#jumbo-login{
+	background-color: #776e5f;
+	font-family: 'Shrikhand', cursive;
+	height: 50px;
+	border: 10px solid #827017;
+	border-radius: 25%;
+}
 #reg-btn{
 	position: absolute;
 	top: 75%;
