@@ -5,7 +5,7 @@
 
 	<div class="container">
 		<div class="jumbotron text-light text-center" id="jumbo-reg">
-			<p>Have your account with us.</p>
+			<h2>Have your account with us.</h2>
 		</div> <!-- end jumbo -->
 
 		<form>

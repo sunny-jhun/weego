@@ -4,6 +4,8 @@
 }
 #navbar{
 	background-color: white;
+	border-bottom: 10px double #827017;
+	/*border-top: 10px solid #827017;*/
 }
 
 #jumbo{
