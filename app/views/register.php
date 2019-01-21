@@ -4,7 +4,7 @@
 	global $conn;  ?>
 
 	<div class="container">
-		<div class="jumbotron text-light text-center" id="jumbo-reg">
+		<div class="jumbotron text-light text-center mt-2" id="jumbo-reg">
 			<h2>Have your account with us.</h2>
 		</div> <!-- end jumbo -->
 

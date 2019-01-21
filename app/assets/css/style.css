@@ -4,7 +4,7 @@
 }
 #navbar{
 	background-color: white;
-	border-bottom: 10px double #827017;
+	border-bottom: 3px solid #827017;
 	/*border-top: 10px solid #827017;*/
 }
 
@@ -63,7 +63,6 @@
 	border-radius: 10%;
 	color: white;
 	border-left: solid 8px #52470f;
-	
 }
 
 #jumbo-login{
@@ -75,7 +74,7 @@
 }
 #reg-btn{
 	position: absolute;
-	top: 75%;
+	top: 79%;
 	left: 33%;
 }
 #img-reg{
