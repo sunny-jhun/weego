@@ -1,5 +1,5 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="navbar">
-    <a class="navbar-brand" href="../views/home.php" id="brand"> <img id="logo" src="../assets/images/WeeGo.png" style="width: 100px;">
+    <a class="navbar-brand" href="../views/home.php" id="brand"> <img id="logo" src="../assets/images/weego1.png" style="width: 100px;">
      
     </a>
 

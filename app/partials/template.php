@@ -21,7 +21,7 @@
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <link rel='shortcut icon' type='image/x-icon' href='../assets/images/WeeGo.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='../assets/images/weego1.png' />
 
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 	<title></title>
