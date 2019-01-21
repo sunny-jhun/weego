@@ -4,13 +4,13 @@
 	global $conn;  ?>
 
 	<div class="container">
-		<div class="jumbotron bg-dark text-light text-center mt-5">
-			<h4>Register</h4>
+		<div class="jumbotron text-light text-center" id="jumbo-reg">
+			<p>Have your account with us.</p>
 		</div> <!-- end jumbo -->
 
 		<form>
-			<div class="row">
-				<div class="col-sm-6">
+			<div class="row justify-content-right">
+				<div class="col-sm-3">
 					<div class="form-group">
 						<label for="firstname">First Name:</label>
 						<input type="text" id="firstname" class="form-control" name="firstname" placeholder="Enter Your First Name Here">
@@ -36,7 +36,7 @@
 					</div>
 				</div> <!-- end left side -->
 
-				<div class="col-sm-6">
+				<div class="col-sm-3">
 					<div class="form-group">
 						<label for="username">Username:</label>
 						<input type="text" id="username" class="form-control" name="username" placeholder="Enter Your Username Here">
@@ -55,10 +55,17 @@
 						<span class="validation"></span>
 					</div>	
 				</div> <!-- end right side -->
+				<div class="col-sm-6">
+					<div>
+						<img src="../assets/images/register.jpeg" id="img-reg">
+						
+					</div>
+					
+				</div> <!-- end of background div -->
 			</div> <!-- end row -->
 		</form> <!-- end form -->
 		
-		<div class="text-center py-4 mb-5">
+		<div class="py-4 mb-5" id="reg-btn">
 			<a href="./login.php" class="btn btn-secondary"> Login </a>
 			<button id="add_user" type="button" class="btn btn-primary">Register</button>
 		</div>

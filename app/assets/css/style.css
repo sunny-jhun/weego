@@ -35,14 +35,6 @@
 	background-color: white;
 }
 
-/*#reg{
-	background-image: url(../images/register.jpeg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-family: 'Shrikhand', cursive;
-	font-size: 10em;
-}*/
 
 #form-reg{
 	background-color: #827017;
@@ -70,4 +62,22 @@
 	color: white;
 	border-left: solid 8px #52470f;
 }
+#reg-btn{
+	position: absolute;
+	top: 75%;
+	left: 33%;
+}
+#img-reg{
+	height: 50vh;
+	width: 100%;
+}
+#jumbo-reg{
+	background-color: #827017;
+	font-family: 'Shrikhand', cursive;
+	font-size: 2em;
+	height: 10vh;
+}
+
+
+
 
