@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="navbar">
-    <a class="navbar-brand" href="../views/home.php" id="brand"> <img id="logo" src="../assets/images/logo1.jpeg">
-      WeeGo
+    <a class="navbar-brand" href="../views/home.php" id="brand"> <img id="logo" src="../assets/images/WeeGo.png" style="width: 100px;">
+     
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
