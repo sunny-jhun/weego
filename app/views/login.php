@@ -3,7 +3,7 @@
 <?php function get_page_content() { ?>
 	
 	<div class="container">
-		<div class="jumbotron text-light text-center col-12 col-md-6 offset-md-3 mb-0" id="jumbo-login">
+		<div class="jumbotron text-light text-center col-12 col-md-6 offset-md-3 mb-0 mt-3" id="jumbo-login">
 			<h2>Access your WeeGo account</h2>
 		</div> <!-- end jumbo -->
 
