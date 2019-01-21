@@ -11,7 +11,7 @@ $(document).ready( () => {
 
 		//username should be greater than or equal to 10 chars
 		if(username.length < 6) {
-			$("#username").next().html("Username should be at least 10 characters");
+			$("#username").next().html("Username should be at least 6 characters");
 			$("#username").next().css('color', 'red');
 			errors++;
 		} else {
