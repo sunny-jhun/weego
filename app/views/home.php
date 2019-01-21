@@ -8,7 +8,7 @@
 		<div class="jumbotron bg-dark" id="jumbo">
 			<div class="d-flex justify-content-center" id="inner-line">
 				<p class="text-center" id="brand">WeeGo</p>
-				<h1 class="text-center" >We make it goes for you</h1>
+				<h1 class="text-center" >We make it go for you</h1>
 			</div>
 		</div>
 	</div>
