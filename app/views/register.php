@@ -9,7 +9,7 @@
 		</div> <!-- end jumbo -->
 
 		<form>
-			<div class="row justify-content-right">
+			<div class="row justify-content-right" id="text-reg">
 				<div class="col-sm-3">
 					<div class="form-group">
 						<label for="firstname">First Name:</label>

@@ -21,7 +21,7 @@
 			</div>
 
 		</form>
-			<div class="text-center col-6 offset-3 py-4">
+			<div class="text-center col-6 offset-3 py-4" id="login-btn">
 				<a href="./register.php" class="btn btn-secondary">Register</a>
 				<button type="button" class="btn btn-primary" id="login">Login</button>
 			</div>

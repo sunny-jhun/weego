@@ -72,13 +72,13 @@
 							<div class="card h-100">
 								<img id="img-item" class="card-img-top" src="<?php echo $item['image_path']; ?>">
 								<div class="card-body">
-									<h4 class="card-title">
+									<h4 class="card-title" id="text-card">
 										<?php echo $item['name']; ?>
 									</h4>
-									<p class="card-text">
+									<p class="card-text" id="descrip-item">
 										<?php echo $item['description']; ?>
 										<br>
-										<?php echo $item['price']; ?>
+										Price:<?php echo $item['price']; ?>
 									</p>
 								</div>
 
