@@ -14,9 +14,9 @@
 		<!-- categories -->
 		<div class="col-sm-2">
 			<!-- display categories -->
-			<h2>Categories</h2>
+			<h3 id="categor">Categories</h3>
 			<ul class="list-group">
-				<a href="catalog.php">
+				<a href="catalog.php" id="list-categor1">
 					<li class="list-group-item"> All </li>
 				</a>
 
@@ -24,21 +24,21 @@
 					$sql = "SELECT * FROM categories";
 					$categories = mysqli_query($conn,$sql);
 					foreach ($categories as $category) { ?>
-						<a href="catalog.php?category_id=<?php echo $category['id'] ; ?>">
+						<a href="catalog.php?category_id=<?php echo $category['id'] ; ?>" id="list-categor2">
 							<li class="list-group-item">
 								<?php echo $category['name']; ?>
 							</li>
 						</a>
 					<?php }	 ?>
 			</ul>
-			<h2>Sort</h2>
+			<h3 id="sort">Sort</h3>
 			<ul class="list-group border">
-				<a href="../controllers/sort.php?sort=asc">
+				<a href="../controllers/sort.php?sort=asc" id="list-sort1">
 					<li class="list-group-item">
 						Price(Lowest to Highest)
 					</li>
 				</a>
-				<a href="../controllers/sort.php?sort=desc">
+				<a href="../controllers/sort.php?sort=desc" id="list-sort2">
 					<li class="list-group-item">
 						Price(Highest to Lowest)
 					</li>
