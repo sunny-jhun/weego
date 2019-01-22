@@ -5,7 +5,7 @@
 		global $conn;
 		?>
 
-		<div class="container">
+		<div class="container mt-3 mb-5">
 			<div class="row">
 				<a href="./new_item.php" class="btn btn-primary">Add New Item</a>
 			</div>

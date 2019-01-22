@@ -11,10 +11,10 @@
 		<div class="row">
 			<div class="col-lg-3">
 				<div class="list-group" id="list-tab" role="tablist">
-					<a class="list-group-item" href="#profile" data-toggle="list" role="tab">
+					<a class="list-group-item" href="#profile" data-toggle="list" role="tab" id="list-profile">
 						User Information
 					</a>
-					<a class="list-group-item" href="#history" data-toggle="list" role="tab">
+					<a class="list-group-item" href="#history" data-toggle="list" role="tab" id="list-history">
 						Order History
 					</a>
 				</div>

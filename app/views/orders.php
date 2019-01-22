@@ -5,7 +5,7 @@
 		global $conn;
 	?>
 
-	<div class="container">
+	<div class="container mt-3 mb-5">
 		<h4>Orders Admin Page</h4>
 		<div class="row">
 			<div class="col-sm-8 offset-sm-2">

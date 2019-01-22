@@ -7,7 +7,7 @@ if(isset($_SESSION['user']) && $_SESSION['user']['roles_id'] == 1) {
 global $conn;
 ?>
 
-	<div class="container">
+	<div class="container mt-3 mb-5">
 		<h4 class="text-center">User Admin Page</h4>
 		<div class="row">
 			<div class="col-sm-10 offset-sm-1">

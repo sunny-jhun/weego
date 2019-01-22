@@ -3,7 +3,7 @@
 <?php function get_page_content() { ?>
 <?php global $conn; ?>
 
-<div class="container">
+<div class="container mt-3 mb-5">
 	<div class="row">
 		<div class="col-sm-8 offset-sm-2">
 			<form action="../controllers/process_add_item.php" method="POST" enctype="multipart/form-data">
