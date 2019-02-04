@@ -24,7 +24,7 @@
 
 		<div class="mySlides fade">
 			<div class="numbertext"></div>
-			<img class="slide-img" src="../assets/images/cars.jpeg" style="width:100%">
+			<img class="slide-img" src="../assets/images/car1.jpeg" style="width:100%">
 			<div class="text">Buy the car you love</div>
 		</div>
 
